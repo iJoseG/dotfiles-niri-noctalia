@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# =============================================================================
+# HYPRLOCK THEME UPDATE & LOCK WRAPPER (NOCTALIA INTEGRATION)
+# Sincroniza el wallpaper activo de Noctalia con Matugen y ejecuta Hyprlock
+# =============================================================================
+
+NOCTALIA_JSON="$HOME/.cache/noctalia/wallpapers.json"
+NOCTALIA_WALLS="$HOME/.cache/noctalia/images/wallpapers/large"
+LINK_PATH="$HOME/.cache/current_wallpaper.png"
+
+LATEST_WALL=""
+
+# 1. Intentar obtener el wallpaper activo directamente desde la configuración de Noctalia
+if [ -f "$NOCTALIA_JSON" ]; then
+    LATEST_WALL=$(python3 -c "
+import json
+try:
+    with open('$NOCTALIA_JSON', 'r') as f:
+        data = json.load(f)
+    walls = list(data.get('wallpapers', {}).values())
+    if walls and walls[0]:
+        print(walls[0])
+    else:
+        print(data.get('defaultWallpaper', ''))
+except Exception:
+    pass
+" 2>/dev/null)
+fi
+
+# 2. Fallback: Si no se pudo leer wallpapers.json, buscar el más reciente en el directorio de caché
+if [ -z "$LATEST_WALL" ] || [ ! -f "$LATEST_WALL" ]; then
+    if [ -d "$NOCTALIA_WALLS" ]; then
+        LATEST_WALL=$(ls -t "$NOCTALIA_WALLS"/* 2>/dev/null | head -n 1)
+    fi
+fi
+
+# 3. Si aún así no hay wallpaper válido, lanzar hyprlock directamente
+if [ -z "$LATEST_WALL" ] || [ ! -f "$LATEST_WALL" ]; then
+    echo "Aviso: No se pudo determinar el fondo de pantalla de Noctalia. Lanzando hyprlock..."
+    exec hyprlock "$@"
+fi
+
+# 4. Obtener cuál fue el wallpaper asignado anteriormente en el enlace simbólico
+PREV_WALL=""
+if [ -L "$LINK_PATH" ]; then
+    PREV_WALL=$(readlink -f "$LINK_PATH")
+fi
+
+# 5. Si el wallpaper cambió o el enlace no existe, regenerar enlace y colores con Matugen
+if [ "$LATEST_WALL" != "$PREV_WALL" ] || [ ! -f "$LINK_PATH" ]; then
+    echo "Detectado cambio de wallpaper en Noctalia: $LATEST_WALL"
+    ln -sf "$LATEST_WALL" "$LINK_PATH"
+    matugen image "$LATEST_WALL"
+fi
+
+# 6. Lanzar hyprlock (pasando cualquier argumento extra que reciba el script)
+exec hyprlock "$@"

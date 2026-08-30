@@ -1,0 +1,7 @@
+[config]
+# Configuración global requerida por Matugen v2+
+# (puedes dejarlo vacío si solo usas defaults)
+
+[templates.hyprlock]
+input_path = "~/.config/matugen/templates/hyprlock-colors.conf"
+output_path = "~/.config/hypr/colors.conf"
