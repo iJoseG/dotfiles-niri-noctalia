@@ -60,6 +60,17 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[shell]
+niri_overview_type_to_launch_enabled = true
+
+    [shell.launcher]
+    app_grid = true
+    categories = false
+
+    [shell.panel]
+    launcher_placement = "attached"
+    launcher_position = "auto"
+
 [theme]
 builtin = "Dracula"
 community_palette = "Oxocarbon"
@@ -71,6 +82,7 @@ source = "wallpaper"
 
 [wallpaper]
 directory = "/home/jguerra/Downloads/wallpp"
+transition_on_startup = true
 
     [wallpaper.default]
     path = "/home/jguerra/Downloads/wallpp/dramatic-scenery-3840x2160-20802.jpg"
@@ -93,6 +105,9 @@ capsule_border = "primary"
 capsule_opacity = 0.84999999999999998
 capsule_padding = 10
 scale = 1.1500000000000001
+
+[widget.control-center]
+glyph = "navigation"
 
 [widget.date]
 capsule = true

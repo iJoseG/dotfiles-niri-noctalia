@@ -1,4 +1,4 @@
-// Configuración de Niri (formato KDL)
+// Configuración de Niri
 prefer-no-csd
 
 // --- VARIABLES DE ENTORNO ---
@@ -27,8 +27,6 @@ switch-events {
     lid-close { spawn "loginctl" "lock-session"; }
 }
 
-//spawn-sh-at-startup "qs -c ~/.config/quickshell/noctalia-shell"
-
 input {
 
     // niri-settings
@@ -43,7 +41,7 @@ input {
         xkb {
             layout "us"
             variant "altgr-intl"
-    	    
+
             // For example:
             //		layout "us,latam"
             //          variant "altgr-intl,"
@@ -111,7 +109,8 @@ output "eDP-1" {
 
 // --- DISEÑO DE VENTANAS (LAYOUT) ---
 layout {
-	
+    background-color "transparent"
+
     gaps 14
     default-column-display "tabbed"
 
@@ -227,7 +226,7 @@ layout {
     struts {
         left 10
         right 10
-        top -25
+        top 0
         bottom 0
     }
 
@@ -249,7 +248,7 @@ layout {
 }
 
 // --- APLICACIONES AL INICIAR & CAPTURAS ---
-spawn-sh-at-startup "qs -c ~/.config/quickshell/noctalia-shell"
+spawn-at-startup "noctalia"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
@@ -266,8 +265,8 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // Set the overview wallpaper on the backdrop.
 layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
+    match namespace="^noctalia-(wallpaper|backdrop)$"
+    place-within-backdrop true
 }
 
 // --- ANIMACIONES ---
@@ -352,6 +351,17 @@ window-rule {
 }
 
 window-rule {
+    match app-id="nankill.xyz.glassymusic.mod"
+    //opacity 0.850
+    default-column-width {
+        proportion 1.0
+    }
+    background-effect {
+        //blur true
+    }
+}
+
+window-rule {
     match app-id="org.gnome.TextEditor"
     opacity 0.80
     background-effect {
@@ -376,17 +386,18 @@ window-rule {
 
 // --- ATAJOS DE TECLADO (BINDS) ---
 binds {
-    // Noctalia & Lanzadores
-    Mod+D { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Mod+S { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
-    Mod+I { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
-    Mod+Slash { spawn "qs" "-c" "ii" "ipc" "call" "cheatsheet" "toggle"; }
+    // Noctalia v5.0.0 & Lanzadores
+    Mod+D { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+S { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+I { spawn "noctalia" "msg" "settings-toggle"; }
+    Mod+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+Slash { show-hotkey-overlay; }
     Super+Shift+S { screenshot; }
 
     // Aplicaciones
     Mod+Z hotkey-overlay-title="Abrir Zen Browser" { spawn "zen-browser"; }
     Mod+Return hotkey-overlay-title="Abrir Terminal Alacritty" { spawn "alacritty"; }
-    Mod+T hotkey-overlay-title="Abrir Terminal Alacritty" { spawn "alacritty"; }
+    //Mod+T hotkey-overlay-title="Abrir Terminal Alacritty" { spawn "alacritty"; }
     Super+E { spawn "nautilus"; }
 
     // Sistema
@@ -394,13 +405,13 @@ binds {
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
     // Super+Alt+L hotkey-overlay-title="Bloquear Pantalla: hyprlock" { spawn "hyprlock"; }
     // Super+Alt+L { spawn "/home/jguerra/.config/hypr/scripts/update-theme-lock"; }
-    Mod+Alt+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Mod+Alt+L { spawn "noctalia" "msg" "session" "lock"; }
 
     // Control de Volumen (Noctalia IPC) & Micrófono
-    XF86AudioMicMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
-    XF86AudioRaiseVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "increase"; }
-    XF86AudioLowerVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-    XF86AudioMute { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    XF86AudioMicMute allow-when-locked=true { spawn "noctalia" "msg" "mic-mute"; }
+    XF86AudioRaiseVolume { spawn "noctalia" "msg" "volume-up"; }
+    XF86AudioLowerVolume { spawn "noctalia" "msg" "volume-down"; }
+    XF86AudioMute { spawn "noctalia" "msg" "volume-mute"; }
 
     // Control de Reproducción (MPRIS / playerctl)
     XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
@@ -562,4 +573,5 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-include "./noctalia.kdl"
+
+include "noctalia.kdl"

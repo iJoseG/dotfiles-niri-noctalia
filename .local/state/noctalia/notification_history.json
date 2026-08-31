@@ -1,525 +1,25 @@
 {
-  "change_serial": 52,
+  "change_serial": 83,
   "entries": [
     {
       "active": false,
       "close_reason": "expired",
-      "event_serial": 3,
+      "event_serial": 73,
       "notification": {
         "actions": [
           "default",
           "View"
         ],
         "app_name": "Antigravity IDE",
-        "body": "Command: noctalia --help || noctalia-ipc --help || qs --help",
+        "body": "Command: noctalia msg --help || true",
         "category": null,
         "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143132991,
+        "expiry_wall_ms": 1788149463678,
         "icon": null,
-        "id": 2,
+        "id": 44,
         "image_data": null,
         "origin": "external",
-        "received_wall_ms": 1788143126991,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 5,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg --help",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143137991,
-        "icon": null,
-        "id": 3,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143131991,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 8,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg --help",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143141991,
-        "icon": null,
-        "id": 4,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143135991,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 9,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg --help | head -n 45",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143144990,
-        "icon": null,
-        "id": 5,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143138990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 11,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg --help | grep -E \"launcher|control|settings|lock|volume|session\"",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143147986,
-        "icon": null,
-        "id": 6,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143141986,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 13,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg session --help || noctalia msg panel-toggle --help",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143150991,
-        "icon": null,
-        "id": 7,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143144991,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 14,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg settings-toggle --help",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143155991,
-        "icon": null,
-        "id": 8,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143149991,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 16,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg status || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143173999,
-        "icon": null,
-        "id": 9,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143167990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 18,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg panel-toggle launcher || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143214994,
-        "icon": null,
-        "id": 10,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143208994,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 20,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg panel-toggle control-center || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143221990,
-        "icon": null,
-        "id": 11,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143215990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 23,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg settings-toggle || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143228990,
-        "icon": null,
-        "id": 12,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143222990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 25,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg session lock || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143233989,
-        "icon": null,
-        "id": 13,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143227989,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 26,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg volume-up || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143237990,
-        "icon": null,
-        "id": 14,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143231990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 28,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg panel-toggle cheatsheet || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143251990,
-        "icon": null,
-        "id": 15,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143245990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 30,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg mic-mute && noctalia msg panel-toggle clipboard && noctalia msg panel-toggle wallpaper",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143266991,
-        "icon": null,
-        "id": 16,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143260991,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 32,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: niri validate --config /home/jguerra/.config/niri/config.kdl || niri --help",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143276988,
-        "icon": null,
-        "id": 17,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143270988,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 34,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: niri validate --config /home/jguerra/.config/niri/config.kdl",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143288988,
-        "icon": null,
-        "id": 18,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143282988,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 37,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: niri msg action reload-config || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143326985,
-        "icon": null,
-        "id": 19,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143320985,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 38,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: niri msg action load-config-file || true",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143329990,
-        "icon": null,
-        "id": 20,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143323990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 40,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Actualización de Binds Noctalia",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788143337988,
-        "icon": null,
-        "id": 21,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788143331988,
-        "summary": "Antigravity IDE",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": true
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 42,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: noctalia --help || noctalia-shell --help || qs --help",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788145877988,
-        "icon": null,
-        "id": 24,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788145871988,
+        "received_wall_ms": 1788149457678,
         "summary": "Requesting your permission in Terminal:",
         "timeout": 6000,
         "urgency": "normal"
@@ -529,22 +29,22 @@
     {
       "active": false,
       "close_reason": "expired",
-      "event_serial": 45,
+      "event_serial": 75,
       "notification": {
         "actions": [
           "default",
           "View"
         ],
         "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg --help",
+        "body": "Command: noctalia msg status",
         "category": null,
         "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788145896988,
+        "expiry_wall_ms": 1788149473678,
         "icon": null,
-        "id": 25,
+        "id": 45,
         "image_data": null,
         "origin": "external",
-        "received_wall_ms": 1788145890988,
+        "received_wall_ms": 1788149467678,
         "summary": "Requesting your permission in Terminal:",
         "timeout": 6000,
         "urgency": "normal"
@@ -554,22 +54,22 @@
     {
       "active": false,
       "close_reason": "expired",
-      "event_serial": 46,
+      "event_serial": 77,
       "notification": {
         "actions": [
           "default",
           "View"
         ],
         "app_name": "Antigravity IDE",
-        "body": "Command: noctalia msg session --help",
+        "body": "Command: niri msg layers",
         "category": null,
         "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788145898986,
+        "expiry_wall_ms": 1788149486678,
         "icon": null,
-        "id": 26,
+        "id": 46,
         "image_data": null,
         "origin": "external",
-        "received_wall_ms": 1788145892986,
+        "received_wall_ms": 1788149480678,
         "summary": "Requesting your permission in Terminal:",
         "timeout": 6000,
         "urgency": "normal"
@@ -579,72 +79,22 @@
     {
       "active": false,
       "close_reason": "expired",
-      "event_serial": 48,
+      "event_serial": 83,
       "notification": {
         "actions": [
           "default",
           "View"
         ],
         "app_name": "Antigravity IDE",
-        "body": "Command: pidof hypridle || systemctl --user status hypridle.service",
+        "body": "Updating Noctalia Layer Rules",
         "category": null,
         "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788145909990,
+        "expiry_wall_ms": 1788149667674,
         "icon": null,
-        "id": 27,
+        "id": 50,
         "image_data": null,
         "origin": "external",
-        "received_wall_ms": 1788145903990,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": false
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 51,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Command: systemctl --user is-active hypridle.service",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788145926988,
-        "icon": null,
-        "id": 28,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788145920988,
-        "summary": "Requesting your permission in Terminal:",
-        "timeout": 6000,
-        "urgency": "normal"
-      },
-      "seen": false
-    },
-    {
-      "active": false,
-      "close_reason": "expired",
-      "event_serial": 52,
-      "notification": {
-        "actions": [
-          "default",
-          "View"
-        ],
-        "app_name": "Antigravity IDE",
-        "body": "Update Hypridle Noctalia Configuration",
-        "category": null,
-        "desktop_entry": "antigravity-ide",
-        "expiry_wall_ms": 1788145929990,
-        "icon": null,
-        "id": 29,
-        "image_data": null,
-        "origin": "external",
-        "received_wall_ms": 1788145923990,
+        "received_wall_ms": 1788149661674,
         "summary": "Antigravity IDE",
         "timeout": 6000,
         "urgency": "normal"
@@ -652,6 +102,6 @@
       "seen": false
     }
   ],
-  "next_id": 30,
+  "next_id": 51,
   "version": 2
 }
