@@ -1,0 +1,9 @@
+{
+  "Applications": [
+    "/usr/share/applications/discord.desktop",
+    "/usr/share/applications/com.obsproject.Studio.desktop",
+    "/var/lib/flatpak/exports/share/applications/com.rtosta.zapzap.desktop",
+    "/home/jguerra/.local/share/applications/glassy_music.desktop",
+    "/usr/share/applications/antigravity-ide.desktop"
+  ]
+}
