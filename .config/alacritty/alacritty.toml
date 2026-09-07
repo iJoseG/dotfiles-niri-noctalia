@@ -17,7 +17,7 @@ thickness = 0.15
 #blinking = "On"         # On | Off | Always | Never
 
 [window]
-opacity = 0.5
+opacity = 0.6
 decorations = "None"
 
 [window.padding]
@@ -25,4 +25,4 @@ x = 10
 y = 8
 
 [colors.primary]
-#background = "#000000"
+background = "#000000"
