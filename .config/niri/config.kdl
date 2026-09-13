@@ -362,6 +362,14 @@ window-rule {
 }
 
 window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    opacity 0.80
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
     match app-id="org.gnome.TextEditor"
     opacity 0.80
     background-effect {
