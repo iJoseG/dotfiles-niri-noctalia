@@ -1,1 +1,15 @@
+# Temas autogenerados
+.config/alacritty/themes/noctalia.toml
+.config/ghostty/themes/noctalia
+.config/niri/noctalia.kdl
+
+
+# Datos privados, historial y estado volátil de Noctalia
+.local/state/noctalia/clipboard/
+.local/state/noctalia/notification_history.json
+.local/state/noctalia/recently_used.json
+.local/state/noctalia/usage_counts.json
+.local/state/noctalia/state.toml
+.local/state/noctalia/community-palettes/
+.local/state/noctalia/community-templates/
 .local/state/noctalia/plugins/sources/
