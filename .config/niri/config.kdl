@@ -312,9 +312,15 @@ window-rule {
 
 window-rule {
     match app-id="^Alacritty$"
+    match app-id="alacritty-floating"
     background-effect {
         blur true
     }
+}
+
+window-rule {
+    match app-id="alacritty-floating"
+    open-floating true
 }
 
 window-rule {
@@ -407,6 +413,7 @@ binds {
     // Aplicaciones
     Mod+Z hotkey-overlay-title="Abrir Zen Browser" { spawn "zen-browser"; }
     Mod+Return hotkey-overlay-title="Abrir Terminal Alacritty" { spawn "alacritty"; }
+    Mod+Shift+Return hotkey-overlay-title="Abrir Terminal Alacritty (Flotante)" { spawn "alacritty" "--class" "alacritty-floating"; }
     //Mod+T hotkey-overlay-title="Abrir Terminal Alacritty" { spawn "alacritty"; }
     Super+E { spawn "nautilus"; }
 
