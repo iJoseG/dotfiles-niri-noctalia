@@ -51,8 +51,8 @@ zstyle ':completion:*:descriptions' format '%F{yellow}-- %d --%f'
 # ALIASES
 # =====================================
 
-alias deit="bash <(curl -sL https://raw.githubusercontent.com/iJoseG/Mscripts/refs/heads/main/datetoday.sh)"
-alias actrepo="bash <(curl -sL https://raw.githubusercontent.com/iJoseG/Mscripts/refs/heads/main/actrepo.sh)"
+alias deit="bash <(curl -sL https://raw.githubusercontent.com/iJoseG/Mscripts/refs/heads/main/utils/actrepo.sh)"
+alias actrepo="bash <(curl -sL https://raw.githubusercontent.com/iJoseG/Mscripts/refs/heads/main/utils/actrepo.sh)"
 
 alias l='eza -l --icons --color=auto --group-directories-first'
 alias ls='eza --icons --color=auto --group-directories-first'
