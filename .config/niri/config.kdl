@@ -111,7 +111,7 @@ output "eDP-1" {
 layout {
     background-color "transparent"
 
-    gaps 14
+    gaps 10
     default-column-display "tabbed"
 
     // When to center a column when changing focus, options are:
@@ -393,7 +393,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 3
     clip-to-geometry true
     draw-border-with-background false
 }
