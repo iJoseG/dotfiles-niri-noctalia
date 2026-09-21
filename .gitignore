@@ -1,7 +1,7 @@
 # Temas autogenerados
 .config/alacritty/themes/noctalia.toml
 .config/ghostty/themes/noctalia
-.config/niri/noctalia.kdl
+# .config/niri/noctalia.kdl
 
 
 # Datos privados, historial y estado volátil de Noctalia
