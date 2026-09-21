@@ -26,3 +26,7 @@ y = 8
 
 [colors.primary]
 background = "#000000"
+
+[scrolling]
+history = 100000  # Número de líneas en el buffer (por defecto suele ser 10000)
+# multiplier = 3   # Cantidad de líneas que avanza por cada paso de la rueda del ratón
