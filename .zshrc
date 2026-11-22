@@ -152,8 +152,9 @@ alias lt="eza --tree --icons --color=auto --group-directories-first"
 alias deit="bash <(curl -sL https://raw.githubusercontent.com/iJoseG/Mscripts/refs/heads/main/utils/actrepo.sh)"
 alias actrepo="bash <(curl -sL https://raw.githubusercontent.com/iJoseG/Mscripts/refs/heads/main/utils/actrepo.sh)"
 alias proy1="cd ~/Documents/lelninmachin10-04 && source venv_tf/bin/activate && python fine_tuning_app.py"
-alias con_davi="/home/jguerra/Documents/Mscripts/conv_davinci.sh"
+alias con_davi="/home/jguerra/Documents/Mscripts/media/conv_davinci.sh"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias s='shutdown now'
 
 # =====================================
 # INTERACTIVE EXECUTION
