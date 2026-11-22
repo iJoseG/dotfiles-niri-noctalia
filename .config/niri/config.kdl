@@ -91,7 +91,7 @@ input {
 
 // --- CONFIGURACIÓN DE SALIDAS (MONITORES) ---
 output "HDMI-A-1" {
-    mode "1360x768@60.015"
+    mode "1920x1080@60.000"
     scale 1
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
@@ -101,17 +101,18 @@ output "HDMI-A-1" {
 }
 
 output "eDP-1" {
+    //off
     mode "1366x768@60.003"
     scale 1.0
     transform "normal"
-    position x=0 y=768
+    position x=1920 y=430
 }
 
 // --- DISEÑO DE VENTANAS (LAYOUT) ---
 layout {
     background-color "transparent"
 
-    gaps 10
+    gaps 6
     default-column-display "tabbed"
 
     // When to center a column when changing focus, options are:
@@ -340,7 +341,7 @@ window-rule {
 window-rule {
     match app-id="org.gnome.Nautilus"
     default-column-width {
-        proportion 0.66667
+        proportion 0.5
     }
     opacity 0.80
     background-effect {
